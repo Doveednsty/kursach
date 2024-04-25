@@ -1,0 +1,272 @@
+table {
+    width: 100%;
+    border-spacing: 0 10px;
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    background-color: #E4FDE1; 
+}
+
+body {
+    background-color: #00303F;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Добавляем границы для ячеек */
+    text-align: left;
+    min-width: 60px; /* Минимальная ширина ячейки, можно подстроить под свои нужды */
+    line-height: 1.5; /* Установка высоты строки */
+}
+
+thead th {
+    background-color: #007F7F; 
+    color: #E4FDE1;
+    padding: 10px;
+    text-align: center;
+    position: sticky; 
+    top: 0; 
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #CAECE6; /* Чередуем цвета для строк таблицы */
+}
+
+#charts {
+    width: 100%;
+    margin: 0 auto;
+}
+
+canvas {
+    display: block;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 0px;
+    width: 100%;
+    background-color: #005F73;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li a { 
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #E4FDE1;
+    border-bottom: 1px solid #eaeaea; /* Границы между элементами меню */
+}
+
+/* Стиль для ссылок при наведении */
+nav ul li a:hover {
+    background-color: #002F34; 
+    color: #CAECE6;
+    user-select: none;
+}    
+
+
+
+nav {
+    top: 0;
+    width: 100%;
+    z-index: 100; /* Убедитесь, что навигация находится над другими элементами */
+}
+
+.content-section,
+#help,
+#about {
+    background-color: #CAECE6; 
+    color: #005F73; 
+}
+
+
+.content-section {
+    display: block; 
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.content-section2 {
+    max-width: 800px;
+}
+
+
+.active-tab {
+    display: block;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; 
+}
+button,
+#download-data-button {
+    background-color: #005F73; 
+    color: #E4FDE1;
+}
+
+#edit-section {
+    padding: 20px;
+    background-color: #007F7F; 
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 60%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#edit-section h2 {
+    text-align: center;
+    color: #E4FDE1; 
+    margin-bottom: 30px; 
+}
+
+#student-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Растягивание элементов формы на всю доступную ширину */
+}
+
+#student-form label {
+    color: #333; 
+    margin-bottom: 5px;
+}
+label {
+    display: block; /* Для возможности добавления отступов и других стилей */
+    margin-bottom: 5px;
+    color: white; /* Цвет текста меток */
+}
+
+#student-form input[type="text"],
+#student-form input[type="number"] {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    font-size: 16px; 
+}
+
+#student-form input[type="text"],
+#student-form input[type="number"],
+#student-form button {
+    border: 1px solid #005F73; /* Темно-синий цвет границ */
+}
+
+#student-form button {
+    width: auto; /* Ширина кнопки по содержимому */
+    margin-top: 20px; /* Отступ сверху */
+    margin-left: auto; /* Выравнивание кнопки по правому краю */
+    margin-right: auto; /* Выравнивание кнопки по правому краю */
+    display: block; /* Блочное отображение для центрирования */
+    background-color: #005F73; 
+    color: #E4FDE1; 
+}
+
+#student-form button:hover {
+    background-color: #00303F; 
+}
+
+.content-section {
+    margin-left: 220px; /* Установите отступ, равный или больше ширины навигационной панели */
+    transition: margin-left 0.3s; /* Плавное изменение отступа */
+}
+
+#student-form button {
+    padding: 10px 20px; /* Увеличенные отступы внутри кнопки */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Добавлен верхний отступ для кнопки */
+    width: auto; /* Автоматическая ширина для кнопки */
+    align-self: center; /* Расположение кнопки по центру */
+}
+
+button:hover,
+#download-data-button:hover {
+    background-color: #00303F; 
+}
+
+#edit-section label {
+    width: 100%; /* Ширина меток на всю доступную ширину */
+    margin-bottom: 5px; /* Отступ снизу для меток */
+}
+
+#help {
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#help h2, #help h3 {
+    color: #333;
+}
+
+#help p {
+    margin: 10px 0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#about {
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    text-align: center;
+    color: #333;
+}
+
+#about p {
+    margin: 10px 0;
+}
+
+#about a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#about a:hover {
+    text-decoration: underline;
+}
+
+#about img {
+    display: block;
+    max-width: 380px;
+    margin: 20px auto;
+    border-radius: 10%;
+}
+
+#download-data-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #ff4d4d; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #ff3333;
+}
